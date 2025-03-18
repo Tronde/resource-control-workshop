@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/stress-ng --all -1 --maximize --agressive
+ExecStart=/usr/bin/stress-ng --all -1 --maximize --aggressive
 Restart=on-failure
 RestartSec=5s
 
