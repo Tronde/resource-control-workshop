@@ -1,0 +1,22 @@
+[Unit]
+Description=Stress-ng CPU and Memory Test with Resource Limits
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/stress-ng --all -1 --maximize --agressive
+Restart=on-failure
+RestartSec=5s
+
+# CPU limit (80%)
+#CPUQuota=80%
+
+# Memory limit (80%)
+#MemoryLimit=80%
+
+# Enable CPU and memory accounting
+#CPUAccounting=true
+#MemoryAccounting=true
+
+[Install]
+WantedBy=multi-user.target
