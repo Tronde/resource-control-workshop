@@ -9,6 +9,11 @@ The story being addressed is to limit resources for applications and services in
   * [RHEL 9 - Monitoring and managing system status and performance - Chapter 33-35](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/monitoring_and_managing_system_status_and_performance/index)
   * [RHEL 9 - Managing, monitoring, and updating the kernel - Chapter 24 and 25](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_monitoring_and_updating_the_kernel/index)
   * [RHEL 8 - Managing, monitoring, and updating the kernel - Chapter 23-26](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/managing_monitoring_and_updating_the_kernel/index)
+  * [Migrating from CGroups V1 in Red Hat Enterprise Linux 7 and below to CGroups V2 in Red Hat Enterprise Linux 8 (login required)](https://access.redhat.com/articles/3735611)
+
+## What other interesting resources are out there?
+
+  * [World domination with cgroups in RHEL 8: welcome cgroups v2!](https://www.redhat.com/en/blog/world-domination-cgroups-rhel-8-welcome-cgroups-v2) by Marc Richter (Principal Technical Account Manager at Red Hat)
 
 ## How to exhaust system resources like CPU and Memory?
 

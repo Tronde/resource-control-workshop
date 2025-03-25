@@ -4,7 +4,13 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/stress-ng --all -1 --maximize --aggressive
+#ExecStart=/usr/bin/stress-ng --all 4 --timeout 5m
+ExecStart=/usr/bin/stress-ng --cpu 64 --vm 1 --vm-bytes 2g --iomix 1 --maximize --aggressive -t 2m
+#ExecStart=/usr/bin/stress-ng --all -1 --maximize --aggressive -t 2m
+#ExecStart=/usr/bin/stress-ng --cpu 64 --vm 2 --vm-bytes 1g --iomix 2 --maximize --aggressive -t 1m --hdd 8
+#ExecStart=/usr/bin/stress-ng --cpu 4 --vm 2 --vm-bytes 1g --iomix 2 --maximize --aggressive -t 1m --hdd 8
+#ExecStart=/usr/bin/stress-ng --cpu 4 --vm 2 --vm-bytes 1g --iomix 2 --maximize --aggressive -t 1m --hdd 8 --aggressive --maximum
+#ExecStart=/usr/bin/stress-ng --cpu 4 --vm 2 --vm-bytes 1g --iomix 2 --maximize --aggressive -t 1m --hdd 8 --aggressive
 Restart=on-failure
 RestartSec=5s
 
